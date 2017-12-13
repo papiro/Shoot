@@ -1,0 +1,254 @@
+html {
+  height: 100%;
+  /*background-image: url('../img/background.svg');
+  background-size: cover;
+  background-color: #FEFE33;*/
+}
+header {
+  margin-top: 20%;
+  margin-left: 1%;
+}
+header #rock {
+  width: 30%;
+  margin-right: 3%;
+}
+header #paper {
+  width: 25%;
+  margin-left: 2%;
+  margin-right: 3%;
+}
+header #scissors {
+  width: 30%;
+  margin-left: 2%;
+}
+main {
+  align-content: center;
+  text-align: center;
+  vertical-align: middle;
+}
+h1 {
+  text-align: center;
+  margin-top: 0%;
+  margin-bottom: 30%;
+  color: #D8E5A9;
+  font-size: 500%;
+  -webkit-text-stroke-width: .1rem;
+  -webkit-text-stroke-color: black;
+}
+h2 {
+  text-align: center;
+  margin-top: 0%;
+  margin-bottom: 30%;
+  color: black;
+  font-size: 500%;
+}
+input {
+ border-radius: 30rem;
+ border-style: solid;
+ border-width: .1rem;
+ border-color: black;
+ height: 3rem;
+ width: 90%;
+ text-align: center;
+ font-size: 30px;
+ color: black;
+ background-color: white;
+}
+.btn {
+  height: 100%;
+  width: 30%;
+  border: solid .1rem;
+  border-radius: .6rem;
+  margin-top: 1rem;
+  background-color: #D8E5A9;
+  overflow: hidden;
+  transition-duration: 0.1s;
+}
+.btn img {
+  width: 4em;
+  height: 4em;
+}
+.human {
+  margin-right: 5%;
+}
+.robot {
+  margin-left: 5%;
+}
+.btn:active {
+  -webkit-box-shadow: inset 0 1px 4px rgba(0,0,0,0.6);
+  -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  background: #2C350F;
+  border: solid 1px #2C350F;
+}
+.pie1 {
+  margin-left: -35%;
+}
+.pie3 {
+  margin-top: 30%;
+  margin-left: -18%;
+}
+.pie1, .pie2, .pie3 {
+  position: absolute;
+  border:none;
+  background-color: transparent;
+  border-radius: 100%;
+  height: 7rem;
+  width: 7rem;
+}
+.slice1, .slice2, .slice3 {
+  position: absolute;
+}
+.slice1 {
+  margin-top: -70%;
+  margin-left: -77%;
+}
+.slice2 {
+  margin-top: -70%;
+  margin-left: -69%
+}
+.slice3 {
+  transform: rotate(120deg);
+  margin-left: -73%;
+  margin-top: -68%;
+}
+svg {
+  height: 10rem;
+  width: 10rem;
+}
+@media (min-width: 412px) {
+  h1 {
+    font-size: 600%;
+  }
+  .pie1 {
+  margin-left: -26%;
+}
+  .pie3 {
+    margin-top: 22%;
+    margin-left: -13.5%;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    margin-top: 12%;
+    margin-left: 2%;
+  }
+  h1 {
+    font-size: 12rem;
+    margin-bottom: 20%;
+    -webkit-text-stroke-width: .2rem;
+  }
+  input {
+    height: 4rem;
+    border-width: .2rem;
+    font-size: 45px;
+  }
+  .btn {
+    border: solid .2rem;
+  }
+  .human {
+    height: 8rem;
+  }
+  .robot {
+    height: 8rem;
+  }
+  .btn img {
+    width: 8.5rem;
+    height: 8.5rem;
+  }
+  h2 {
+    font-size: 12rem;
+  }
+  .pie1, .pie2, .pie3 {
+    height: 15rem;
+    width: 15rem;
+    background-color: grey;
+  }
+  .pie1 {
+    margin-top: -15%;
+    margin-left: -32%;
+  }
+  .pie2 {
+  margin-top: -15%;
+  margin-left: 3%;
+  }
+  .pie3 {
+    margin-top: 16%;
+    margin-left: -14.5%;
+  }
+  .slice1, .slice2, .slice3 {
+    height: 25rem;
+    width: 24rem;
+  }
+  .slice1 {
+    margin-top: -81%;
+    margin-left: -85%;
+  }
+  .slice2 {
+    margin-top: -80%;
+    margin-left: -75%;
+  }
+  .slice3 {
+    margin-top: -80%;
+    margin-left: -84%;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    text-align: center;
+    margin-top: 3%;
+    margin-left: 0%;
+  }
+  header #rock {
+    width: 15%;
+  }
+  header #paper {
+    width: 12%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  header #scissors {
+    width: 15%;
+    margin-left: 3%;
+  }
+  h1 {
+    margin-bottom: 8%;
+    font-size: 800%;
+    -webkit-text-stroke-width: .1rem;
+  }
+  input {
+    width: 45%;
+    height: 4rem;
+  }
+  .btn {
+    border: solid .05rem;
+    width: 10%;
+    height: 4.5rem;
+    display: inline-block;
+  }
+  .btn img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .robot {
+    margin-left: 5%;
+  }
+  h2 {
+    font-size: 9rem;
+    margin-top: -3%;
+  }
+  .pie1 {
+    margin-left: -16%;
+    margin-top: -25%;
+  }
+  .pie2 {
+    margin-left: 1%;
+    margin-top: -25%; 
+  }
+  .pie3 {
+    margin-left: -7.5%;
+    margin-top: -10%;
+  }
+}
