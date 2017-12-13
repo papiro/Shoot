@@ -1,15 +1,6 @@
-const one = document.getElementById('rock');
-const two = document.getElementById('paper');
-const three = document.getElementById('scissors');
-
-one.addEventListener('click', function(event) {
-  alert('Rock has been chosen');
-});
-
-two.addEventListener('click', function(event) {
-  alert('Paper has been chosen');
-});
-
-three.addEventListener('click', function(event) {
-  alert('Scissors has been chosen');
+['rock', 'scissors', 'paper'].forEach(function(item) {
+  const elem = document.getElementById(item);
+  elem.addEventListener('click', function(event) {
+    alert(item.charAt(0).toUpperCase() + item.slice(1) + ' has been chosen');
+  });
 });
