@@ -1,17 +1,6 @@
-var one = document.getElementsByClassName('pie1');
-
-one[0].addEventListener('click', function(event) {
-  alert('Rock has been chosen');
-});
-
-var two = document.getElementsByClassName('pie2');
-
-two[0].addEventListener('click', function(event) {
-  alert('Paper has been chosen');
-});
-
-var three = document.getElementsByClassName('pie3');
-
-three[0].addEventListener('click', function(event) {
-  alert('Scissors has been chosen');
+['rock', 'scissors', 'paper'].forEach(function(item) {
+  const elem = document.getElementById(item);
+  elem.addEventListener('click', function(event) {
+    alert(item.charAt(0).toUpperCase() + item.slice(1) + ' has been chosen');
+  });
 });
