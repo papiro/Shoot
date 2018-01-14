@@ -16,6 +16,15 @@ const moves = {
   }
 };
 
+const counter = function() { document.getElementById('counter').innerHTML = '0';
+};
+
+const addone = function () {  
+  const counter = document.getElementById('counter').innerHTML;
+  const wins = parseInt(counter, 10) + 1;
+  const newwins = document.getElementById('counter').innerHTML = wins;
+};
+
 function playRobot () {
   ['rock', 'scissors', 'paper'].forEach(function(item) {
     const elem = document.getElementById(item);
@@ -27,9 +36,11 @@ function playRobot () {
       switch (outcome) {
         case 0:
           console.log(`YOU LOSE:::${userMove} vs ${robotMove}`);
+          counter();
           break;
         case 1:
           console.log(`YOU WIN:::${userMove} vs ${robotMove}`);
+          addone();
           break;
         case -1:
           console.log(`TIE:::${userMove} vs ${robotMove}`);

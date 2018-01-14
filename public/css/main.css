@@ -27,6 +27,7 @@ header h2 {
   text-align: center;
   color: black;
   font-size: 15vw;
+  margin-bottom: 30vw;
 }
 input {
  border-radius: 30rem;
@@ -86,41 +87,9 @@ input:foucs:-ms-input-placeholder {
 #rock, #scissors, #paper, .human, .robot {
   cursor: pointer;
 }
-/*.pie1 {
-  margin-left: -35%;
-}
-.pie3 {
-  margin-top: 30%;
-  margin-left: -18%;
-}
-.pie1, .pie2, .pie3 {
-  position: absolute;
-  border:none;
-  background-color: transparent;
-  border-radius: 100%;
-  height: 7rem;
-  width: 7rem;
-  outline: none;
-}*/
-/*.slice1, .slice2, .slice3 {
-  position: absolute;
-}
-.slice1 {
-  margin-top: -70%;
-  margin-left: -77%;
-}
-.slice2 {
-  margin-top: -70%;
-  margin-left: -69%
-}
-.slice3 {
-  transform: rotate(120deg);
-  margin-left: -73%;
-  margin-top: -68%;
-}*/
 svg {
-  height: 10rem;
-  width: 10rem;
+  height: 50vw;
+  width: 50vw;
 }
 .pie {
   display: flex;
@@ -129,25 +98,20 @@ svg {
   flex-flow: row wrap;
 }
 .slice1 {
-  flex-basis: 30%;
+  flex-basis: 30vw;
 }
 .slice2 {
-  flex-basis: 30%;
+  flex-basis: 30vw;
+  margin-left: 3vw;
 }
 .slice3 {
+  height: 46vw;
+  width: 43vw;
   transform: rotate(120deg);
   align-self: flex-end;
+  margin-top: -21vw;
+  margin-left: -1.6vw;
 }
-@media (min-width: 412px) {
- /* .pie1 {
-  margin-left: -26%;
-}
-  .pie3 {
-    margin-top: 22%;
-    margin-left: -13.5%;
-  }*/
-}
-
 @media (min-width: 768px) {
   header img {
     width: 12rem;
@@ -160,6 +124,9 @@ svg {
   }
   header {
     margin-top: 12%;
+  }
+  header h2 {
+    margin-bottom: 10vw;
   }
   input {
     height: 4rem;
@@ -179,43 +146,16 @@ svg {
   .robot {
     height: 8rem;
   }
-  /*.pie1, .pie2, .pie3 {
-    height: 15rem;
-    width: 15rem;
-    background-color: grey;
-  }
-  .pie1 {
-    margin-top: -15%;
-    margin-left: -32%;
-  }
-  .pie2 {
-  margin-top: -15%;
-  margin-left: 3%;
-  }
-  .pie3 {
-    margin-top: 16%;
-    margin-left: -14.5%;
-  }*/
-  /*.slice1, .slice2, .slice3 {
-    height: 25rem;
-    width: 24rem;
-  }
-  .slice1 {
-    margin-top: -81%;
-    margin-left: -85%;
-  }
-  .slice2 {
-    margin-top: -80%;
-    margin-left: -75%;
-  }
-  .slice3 {
-    margin-top: -80%;
-    margin-left: -84%;
-  }*/
 }
 @media (min-width: 1024px) {
   header {
     margin-top: 3%;
+  }
+  header h2 {
+    font-size: 15vw;
+    margin-bottom: -1%;
+    margin-top: -6%;
+    margin-left: 3vw;
   }
   main h1 {
     margin-bottom: 8%;
@@ -233,16 +173,20 @@ svg {
     width: 5rem;
     height: 5rem;
   }
-  /*.pie1 {
-    margin-left: -16%;
-    margin-top: -25%;
+  svg {
+  height: 40vw;
+  width: 40vw;
   }
-  .pie2 {
-    margin-left: 1%;
-    margin-top: -25%; 
+  .slice1 {
+    flex-basis: 35vw;
   }
-  .pie3 {
-    margin-left: -7.5%;
-    margin-top: -10%;
-  }*/
+  .slice2 {
+    margin-left: -3vw;
+  }
+  .slice3 {
+    height: 40.5vw;
+    width: 40vw;
+    margin-top: -16vw;
+    margin-left: 1.5vw;
+  }
 }
