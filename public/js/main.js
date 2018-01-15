@@ -20,13 +20,13 @@ const counterEl = document.getElementById('counter');
 let counter = 0;
 
 const reset = function() { 
-  counterEl.innerHTML = '0';
+  counter = 0;
+  counterEl.innerHTML = counter;
 };
 
 const addone = function () {  
-  const counter = counterEl.innerHTML;
-  const wins = parseInt(counter, 10) + 1;
-  const newwins = counterEl.innerHTML = wins;
+  const wins = ++counter;
+  counterEl.innerHTML = wins;
 };
 
 function playRobot () {
