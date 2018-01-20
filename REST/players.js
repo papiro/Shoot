@@ -1,3 +1,7 @@
+const 
+  Players = require('../classes/Players')
+;
+
 module.exports = function(req, res) {
   if(req.method !== 'POST') {
     res.setStatus = 405
